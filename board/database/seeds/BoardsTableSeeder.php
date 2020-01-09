@@ -14,10 +14,10 @@ class BoardsTableSeeder extends Seeder
         DB::table('boards')->insert([
             'name' => 'CSM',
             'format' => 'json'
-        ],
-            [
-                'name' => 'CSMB',
-                'format' => 'xml'
-            ] );
+        ]);
+        DB::table('boards')->insert([
+            'name' => 'CSMB',
+            'format' => 'xml'
+        ]);
     }
 }
